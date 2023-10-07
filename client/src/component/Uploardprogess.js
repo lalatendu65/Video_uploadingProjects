@@ -29,6 +29,7 @@ export default function Uploardprogess() {
       }
     setLoading(false);
   };
+
   const upLoadProgress = async () => {
       setLoading2(true);
       const res = await axios.post("http://localhost:4000/start-process"); // Replace with your server URL
@@ -40,7 +41,8 @@ export default function Uploardprogess() {
       }
     setLoading2(false);
   };
-  console.log(loading, loading2);
+
+  //console.log(loading, loading2);
   return (
     <div>
       <div>

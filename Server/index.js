@@ -58,7 +58,7 @@ app.post("/start-download", async (req, res) => {
 app.post("/start-process", async (req, res) => {
   try {
       const destinationFolderId = "117EFmqswxoMczhyi6QS3oS6De5kOm0YY"; // Here replace your foldereId
-      const tempDownloadPath = "./temp/downloaded-video.mp4";
+      const tempDownloadPath = "./temp/downloaded-video.mp4"; // download folder 
 
       // Download the file
       res.setHeader("Content-Type", "application/json");
@@ -87,7 +87,7 @@ app.post("/start-process", async (req, res) => {
     console.error("Error in file transfer process:", error);
     res.status(500).json({ message: "Error in file transfer process" });
   }
-  
+
 });
 
 
